@@ -63,6 +63,14 @@
         strength = 'Invalid!'
       }
       $("#password_strength").html(strength);
+
+      if (passed > 2) {
+        $('.ready-btn').prop('disabled', false);
+      } else {
+        $('.ready-btn').prop('disabled', true);
+      }
+    } else {
+      $('.ready-btn').prop('disabled', true);
     }
     return $("#password_strength").css("color", color);
   });
