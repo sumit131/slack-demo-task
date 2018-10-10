@@ -1,4 +1,27 @@
-<%= form_for(User.new, url: signup_path, method: :post) do |f| %>
-  <%= f.email_field :email, class: 'form-control' %>
-  <%= f.submit %>
-<% end %>
+<div class="row no-gutters">
+  <div class="col-md-6">
+    <div class="home-left">
+      <img src="/assets/home_illo.png" class="home-img">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="home-right">
+      <h1 class="hero_headline">Where Work Happens</h1>
+      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <div class="clearfix"></div>
+      <%= form_for(User.new, url: signup_path, method: :post) do |f| %>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <%= f.email_field :email, placeholder: "Email address", class: 'form-control email-box"' %>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <%= f.submit "Get started", class: "btn submit-btn" %>
+          </div>
+        </div>
+      <% end %>
+      <p class="u-margin-bottom">
+        Already using Slack? <a href="<%= new_user_session_path %>">Sign in</a>.
+      </p>
+    </div>
+  </div>
+</div>

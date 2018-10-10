@@ -72,9 +72,12 @@
   padding-left: 1rem;
 }
 .email-box {
-    height: 52px;
-    border: 1px solid #c8c8cd;
-
+  height: 52px;
+  border: 1px solid #c8c8cd;
+}
+#user_email {
+  height: 52px;
+  border: 1px solid #c8c8cd; 
 }
 .submit-btn {
   padding: 14px 40px;
