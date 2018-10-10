@@ -9,6 +9,9 @@
   padding: 0 0;
 }
 /*<---------nav css ---------*/
+header hr {
+  width: 70%;
+}
 .top-nav{
   padding: .5rem 0;
 }
@@ -24,7 +27,7 @@
 
 }
 .page-home {
-    padding-top: 7rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
 
 }
@@ -120,10 +123,7 @@ p.u-margin-bottom{
   padding-left: 5px;
 }
 
-
-
 /*responsive css goes here*/
-
 @media screen and (max-width: 767px) {
   .top-nav {
       padding: .5rem 15px;
