@@ -1,0 +1,164 @@
+.ml-auto, .mx-auto {
+
+    margin-left: auto !important;
+
+}
+.container {
+  max-width: 76.875rem;
+  width: 100%;
+  padding: 0 0;
+}
+/*<---------nav css ---------*/
+.top-nav{
+  padding: .5rem 0;
+}
+.navbar-light .top-nav-right .navbar-nav li a{
+  color: #6d6f7b;
+  font-size: 1rem;
+}
+.navbar-light .top-nav-right .navbar-nav li a:hover{
+  color: #323648;
+  font-weight: bold;
+}
+.main{
+
+}
+.page-home {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+
+}
+.home-img {
+    margin-left: -21px;
+    width: 97.3%;
+
+}
+.hero_headline {
+    font-weight: 600 !important;
+  line-height: 1.05;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-left: 0;
+  font-size: 4.8rem;
+  color: #323648;
+  font-family: 'Times New Roman'
+}
+
+.inner-main h3{
+  font-weight: 300 !important;
+  line-height: 1.05;
+  letter-spacing: normal;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-left: 0;
+  font-size: 2.3rem;
+  color: #323648; 
+  font-family: 'Roboto', sans-serif;   
+}
+
+.home-right p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-size: 1.25rem;
+  color: #5b5e6d;
+  margin-bottom: 3rem;
+  max-width: 88%;
+}
+.home-right{
+  padding-right: 1.5rem;
+  padding-left: 1rem;
+}
+.email-box {
+    height: 52px;
+    border: 1px solid #c8c8cd;
+
+}
+.submit-btn {
+  padding: 14px 40px;
+  background-color: #13c257;
+  border: 1px solid #00b73a;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.3;
+  font-family: 'Roboto', sans-serif;
+}
+p.u-margin-bottom{
+  font-size: .875rem;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem;
+}
+.inner-main form label {
+    font-weight: 500;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.inner-main form .form-control{
+  height: 45px;
+}
+.inner-main{
+  padding: 0;
+}
+.ready-btn {
+    padding: 14px 40px;
+    background-color: #008952;
+    border: 1px solid #008952;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.3;
+    font-family: 'Roboto', sans-serif;
+}
+.ready-btn i{
+  padding-left: 5px;
+}
+
+
+
+/*responsive css goes here*/
+
+@media screen and (max-width: 767px) {
+  .top-nav {
+      padding: .5rem 15px;
+  }
+  .page-home {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  .no-gutters {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .inner-main h3 br{
+    display: none;
+  }
+  .inner-main h3{
+    font-size: 1.8rem;
+  }
+  .hero_headline{
+    font-size: 2.2rem;
+  }
+  .home-right {
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+  .home-right p{
+    max-width: 100%;
+    font-size: 1.0625rem;
+  }
+  .home-img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 574px) {
+.submit-btn {
+    margin-top: 15px;
+    width: 100%;
+}
+}
