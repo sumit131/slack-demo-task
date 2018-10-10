@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root 'dashboard#home'
 
-  get '/dashboard',to: 'dashboard#guest_landing'
+  match '/dashboard',to: 'dashboard#guest_landing', via: [:get, :post]
+  match '/signup',to: 'dashboard#signup', via: [:get, :post]
 
   devise_for :users
 
