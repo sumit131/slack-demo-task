@@ -12,6 +12,7 @@
           <label>Password</label>
           <%= f.password_field :password, placeholder: "Password", autocomplete: "off", class: "form-control" %>
         </div>
+        <div id="password_strength"></div>
         <hr>
         <p class="u-margin-bottom">Password must be at least 6 characters long, and can’t be things like “password”, “123456” or “abcde”</p>
         <center>
@@ -23,3 +24,46 @@
     </div>
   </div>
 </div>
+
+<script>
+  $("#user_password").bind("keyup", function() {
+    var color, i, passed, regex, strength;
+    if ($(this).val().length === 0) {
+      $("#password_strength").html("");
+      return;
+    }
+    regex = new Array();
+    regex.push("[a-z]");
+    regex.push("[0-9]");
+    passed = 0;
+    i = 0;
+    while (i < 3) {
+      if (new RegExp(regex[i]).test($(this).val())) {
+        passed++;
+      }
+      i++;
+    }
+    if (passed > 2 && $(this).val().length > 5) {
+      passed++;
+    }
+    color = "";
+    strength = "";
+    switch (passed) {
+      case 0:
+      case 2:
+        strength = "Password must be alphanumeric";
+        color = "red";
+        break;
+      case 4:
+        strength = "";
+        color = "";      
+    }
+    if ($(this).val().length > 5) {
+      if (['password','123456', '123123', 'abcde'].indexOf($(this).val()) >= 0) {
+        strength = 'Invalid!'
+      }
+      $("#password_strength").html(strength);
+    }
+    return $("#password_strength").css("color", color);
+  });
+</script>
